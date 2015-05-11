@@ -5,8 +5,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     minifyCss = require('gulp-minify-css');
-// Gulp task
-
+//Tasks
 
 //Sass compiler
 gulp.task('sass-to-css', function() {
