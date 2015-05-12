@@ -3,3 +3,44 @@
   font-size: ($sizeValue / 10) + rem;
   line-height: 1.2;
 }
+
+
+
+/*Padding and Margin for REM with PX fallback*/
+@mixin padding($values...) {
+  $px : ();
+  $rem: ();
+  @each $value in $values {
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+    @else {
+      $px : append($px,  ($value + px));
+      $rem: append($rem, ($value / 10 + rem));
+    }
+  }
+  #{padding}: $px;
+  #{padding}: $rem;
+}
+@mixin margin($values...) {
+  $px : ();
+  $rem: ();
+  @each $value in $values {
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+    @else {
+      $px : append($px,  ($value + px));
+      $rem: append($rem, ($value / 10 + rem));
+    }
+  }
+  #{margin}: $px;
+  #{margin}: $rem;
+}
+/*RGBA fallbacks for old browsers*/
+@mixin background-rgba($r, $g, $b, $a) {
+  background-color: rgb($r, $g, $b);
+  background-color: rgba($r, $g, $b, $a);
+}
