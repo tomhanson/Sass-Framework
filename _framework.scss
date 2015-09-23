@@ -1,0 +1,19 @@
+@import "includes/_fonts";
+@import "includes/_reset";
+/*site constants(icons etc..)*/
+@import "includes/_main";
+/* *****************************
+  Main site layout styles(Header/footer/sidebar/nav)
+  All breakpoints included for these styles only
+  ************************************ */
+@import "layout/_main";
+/*Plugins specific css files*/
+@import "vendor/_main";
+/* *****************************
+  Individual and reusable site blocks
+  Media queries are held within each file to keep them together for usability
+  ************************************ */
+@import "blocks/_main";
+
+/*Last attempt to override any pre specified styles*/
+@import "includes/_overrides";

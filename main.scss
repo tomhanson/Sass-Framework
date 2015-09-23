@@ -1,23 +1,14 @@
-@import "includes/_fonts";
-@import "includes/_reset";
-/*Framework - Bootstrap here */
-@import "bootstrap/_bootstrap";
-/*Mixins*/
-@import "mixins/_main";
-/*site constants(Variables, icons etc..)*/
-@import "includes/_main";
-/* *****************************
-  Main site layout styles(Header/footer/sidebar/nav)
-  All breakpoints included for these styles only
-  ************************************ */
-@import "layout/_main";
-/*Plugins specific css files*/
-@import "vendor/_main";
-/* *****************************
-  Individual and reusable site blocks
-  Media queries are held within each file to keep them together for usability
-  ************************************ */
-@import "blocks/_main";
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+//global variables and mixins
+@import "global/_variables";
+@import "global/_mixins";
+//end globals
 
-/*Last attempt to override any pre specified styles*/
-@import "includes/_overrides";
+@import "components/_buttons";
+@import "components/_comments";
+@import "components/_forms";
+@import "components/_wp-classes";
+@import "_framework";
