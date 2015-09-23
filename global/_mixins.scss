@@ -3,9 +3,6 @@
   font-size: ($sizeValue / 10) + rem;
   line-height: 1.2;
 }
-
-
-
 /*Padding and Margin for REM with PX fallback*/
 @mixin padding($values...) {
   $px : ();
@@ -43,4 +40,26 @@
 @mixin background-rgba($r, $g, $b, $a) {
   background-color: rgb($r, $g, $b);
   background-color: rgba($r, $g, $b, $a);
+}
+//font mixins
+@mixin font-primary {
+  font-family: $font-primary;
+}
+@mixin font-secondary {
+  font-family: $font-secondary;
+}
+@mixin font-tertiary {
+  font-family: $font-tertiary;
+}
+@mixin font-light {
+  font-weight: 300;
+}
+@mixin font-regular {
+  font-weight: 400;
+}
+@mixin font-semibold {
+  font-weight: 600;
+}
+@mixin font-bold {
+  font-weight: 700;
 }
