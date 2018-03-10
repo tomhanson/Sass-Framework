@@ -1,14 +1,22 @@
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
-// bower:scss
-@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
+//vendor files
+
+@import 'vendor/bootstrap/assets/stylesheets/bootstrap';
+
 //global variables and mixins
-@import "global/_variables";
-@import "global/_mixins";
+@import 'global/_reset';
+@import 'global/_variables';
+@import 'global/_mixins';
+@import 'global/_fonts';
+@import 'global/_elements';
+@import 'global/_helpers';
+@import 'global/_icons';
+@import 'global/wp-classes';
+@import 'global/forms';
 //end globals
 
-@import "components/_buttons";
-@import "components/_comments";
-@import "components/_forms";
-@import "components/_wp-classes";
-@import "_framework";
+//components
+
+@import 'components/main';
+
+//last minute over rides - should be empty but just in case
+@import 'global/_overrides';

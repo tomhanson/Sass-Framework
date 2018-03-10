@@ -1,0 +1,59 @@
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+//flex helpers
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+justify-center {
+  justify-content: center;
+}
+
+//spacing helpers
+.spacing-lg {
+  @include addREM(padding-top, 40);
+  @include addREM(padding-bottom, 40);
+}
+
+.spacing-lg--top-only {
+  @include addREM(padding-top, 40);
+}
+
+.spacing-lg--btm-only {
+  @include addREM(padding-bottom, 40);
+}
+
+.spacing-md {
+  @include addREM(padding-top, 20);
+  @include addREM(padding-bottom, 20);
+}
+
+.spacing-md--top-only {
+  @include addREM(padding-top, 20);
+}
+
+.spacing-md--btm-only {
+  @include addREM(padding-bottom, 20);
+}
+
+.spacing-sm {
+  @include addREM(padding-top, 10);
+  @include addREM(padding-bottom, 10);
+}
+
+.spacing-sm--top-only {
+  @include addREM(padding-top, 10);
+}
+
+.spacing-sm--btm-only {
+  @include addREM(padding-bottom, 10);
+}

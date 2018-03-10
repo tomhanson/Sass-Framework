@@ -1,17 +1,25 @@
 /*Colors*/
-$primary-font-color : black;
-$second-font-color : white;
-$tertiary-font-color : blue;
+$brand-primary : '';
+$brand-secondary : '';
+$brand-three : '';
+$brand-four : '';
+$brand-five : '';
+$brand-six : '';
+$brand-seven : '';
 
-$primary-color : white;
-$secondary-color : black;
-$tertiary-color : red;
+$success : '';
+$warning : '';
+$error : '';
+
+$font-color-primary : '';
+$font-color-secondary : '';
+$font-color-tertiary : '';
 
 $font-size : 14;
 
-$font-primary: arial, sans-serif;
-$font-secondary: arial, sans-serif;
-$font-tertiary: arial, sans-serif;
+$font-primary: '', arial, sans-serif;
+$font-secondary: '', arial, sans-serif;
+$font-tertiary: '', arial, sans-serif;
 
 /*Media Query functions */
 $xs-screen: 480px;
